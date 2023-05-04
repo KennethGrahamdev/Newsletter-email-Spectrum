@@ -1,0 +1,11 @@
+Backgrounds:
+- Viewport = #F2F2F2
+- Body = #FFFFFF
+
+Headings:
+- font-family: 'Arimo', sans-serif;
+- colors: #FFFFFF,#6A3460
+
+Paragraphs/Buttons:
+- font-family: 'Open Sans', sans-serif;
+- colors: #333333, #666666
