@@ -83,11 +83,63 @@
         }
     </style>
     <style>
-        @media screen and (max-width: 599.98px) {
+        @media screen and (max-width: 649.98px) {
             /* General styling */
-
-
+            .email-bg {
+                padding: 0 4% 0 4%;
+            }
             /* Section styling */
+            .hero-pad {
+                padding: 10px!important;
+            }
+            .col {
+                width: 100%!important;
+	            margin: 0 0 50px 0;
+            }
+            .col-img {
+                width: 100%!important;
+	            max-width: 100%!important;
+	            height: auto!important;
+            }
+            .col-text {
+                text-align: center!important;
+            }
+            .none {
+                display: none!important;
+            }
+        }
+    </style>
+    <style>
+        @media screen and (max-width: 449.98px) {
+            /* General styling */
+            h2 {
+                font-size: 22px!important;
+            }
+            p {
+                font-size: 16px!important;
+            }
+            /* Section styling */
+            .footer-text {
+                display: block!important;
+                margin: 10px!important;
+            }
+            .bar {
+                display: none!important;
+            }
+            .social-pad {
+                padding: 20px 0!important;
+            } 
+        }
+    </style>
+    <style>
+        @media screen and (max-width: 399.98px) {
+            /* Section styling */
+            .hero-img {
+                max-width: 230px!important;
+            }
+            .hero-head {
+                font-size: 36px!important;
+            }
         }
     </style>
     <style>
@@ -180,13 +232,13 @@
                                         <tr>
                                             <td style="text-align:center;">
                                                 <a href="https://example.com" target="_blank" style="text-decoration: none;">
-                                                    <img src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/MS-Society/imgs/MS-Society-logo.png" width="260" style="vertical-align: middle;width: 100%;max-width: 260px;height: auto;color: #777;font-size: 20px;" alt="MS Society logo">
+                                                    <img class="hero-img" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/MS-Society/imgs/MS-Society-logo.png" width="260" style="vertical-align: middle;width: 100%;max-width: 260px;height: auto;color: #777;font-size: 20px;" alt="MS Society logo">
                                                 </a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align:center;padding: 10px 40px;display: inline-block;max-width: 640px;">
-                                                <h1 style="Margin: 26px 0;font-size: 40px;line-height: 50px;color: #FFFFFF;font-weight: 700;font-family: 'Arimo', sans-serif;">
+                                            <td class="hero-pad" style="text-align:center;padding: 10px 40px;display: inline-block;max-width: 640px;">
+                                                <h1 class="hero-head" style="Margin: 26px 0;font-size: 40px;line-height: 50px;color: #FFFFFF;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                     The Buzz
                                                 </h1>
                                                 <p style="Margin: 20px 0;font-size: 20px;line-height: 30px;color: #FFFFFF;font-weight: 400;font-family: 'Open Sans', sans-serif;">
@@ -226,7 +278,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
+                                        <td class="text-pad" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
                                             <h2 style="Margin: 0 0 10px 0;font-size: 24px;line-height: 30px;color: #6A3460;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                 Want to get active in 2017?
                                             </h2>
@@ -273,7 +325,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
+                                        <td class="text-pad" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
                                             <h2 style="Margin: 0 0 10px 0;font-size: 24px;line-height: 30px;color: #6A3460;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                 Nominate your MS hero today
                                             </h2>
@@ -320,7 +372,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
+                                        <td class="text-pad" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
                                             <h2 style="Margin: 0 0 10px 0;font-size: 24px;line-height: 30px;color: #6A3460;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                 A research round-up of 2022
                                             </h2>
@@ -367,7 +419,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
+                                        <td class="text-pad" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
                                             <h2 style="Margin: 0 0 10px 0;font-size: 24px;line-height: 30px;color: #6A3460;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                 Watch an animated history of MS
                                             </h2>
@@ -411,15 +463,15 @@
                                     <tr>
                                         <td style="background-color: #f2f2f2;text-align: center;">
                                             <!-- Column-1 start -->
-                                            <table class="column" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" style="width: 48%;">
+                                            <table class="col" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" style="width: 48%;">
                                                 <tr>
                                                     <td style="vertical-align: top;">
                                                         <!-- Value for the width attribute is different than max-width to ensure sufficient gap is created between columns on MSO -->
-                                                        <img src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/MS-Society/imgs/helpline.png" width="306" style="display: block;width: 100%;max-width: 312px;height: auto;border-radius: 5px 5px 0 0;color: #777;font-size: 20px;" alt="Icon image to represent calling helpline.">
+                                                        <img class="col-img"src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/MS-Society/imgs/helpline.png" width="306" style="display: block;width: 100%;max-width: 312px;height: auto;border-radius: 5px 5px 0 0;color: #777;font-size: 20px;" alt="Icon image to represent calling helpline.">
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="text-align: left;padding: 20px 20px 0 20px;background-color: #ffffff;vertical-align: top;border-radius: 0 0 5px 5px;">
+                                                    <td class="col-text" style="text-align: left;padding: 20px 20px 0 20px;background-color: #ffffff;vertical-align: top;border-radius: 0 0 5px 5px;">
                                                             <!--[if mso 16]>
                                                               <h2 style="Margin: 0 40px 10px 0;">
                                                             <![endif]-->
@@ -454,15 +506,15 @@
                                             </table>
                                             <!-- Column-1 end -->
                                             <!-- Column-2 start -->
-                                            <table class="column" role="presentation" cellspacing="0" cellpadding="0" border="0" align="right" style="width: 48%;">
+                                            <table class="col" role="presentation" cellspacing="0" cellpadding="0" border="0" align="right" style="width: 48%;">
                                                 <tr>
                                                     <td style="vertical-align: top;">
                                                         <!-- Value for the width attribute is different than max-width to ensure sufficient gap is created between columns on MSO -->
-                                                        <img src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/MS-Society/imgs/donate.png" width="306" style="display: block;width: 100%;max-width: 312px;height: auto;border-radius: 5px 5px 0 0;color: #777;font-size: 20px;" alt="Icon image to represent calling helpline.">
+                                                        <img class="col-img" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/MS-Society/imgs/donate.png" width="306" style="display: block;width: 100%;max-width: 312px;height: auto;border-radius: 5px 5px 0 0;color: #777;font-size: 20px;" alt="Icon image to represent calling helpline.">
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="text-align: left;padding: 20px 20px 0 20px;background-color: #ffffff;vertical-align: top;border-radius: 0 0 5px 5px;">
+                                                    <td class="col-text" style="text-align: left;padding: 20px 20px 0 20px;background-color: #ffffff;vertical-align: top;border-radius: 0 0 5px 5px;">
                                                         <h2 style="Margin: 0 0 10px 0;font-size: 24px;line-height: 30px;color: #6A3460;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                             Your support
                                                           </h2>
@@ -498,7 +550,7 @@
             <!-- Section padding start -->
             <tr>
                 <td style="background-color: #f2f2f2;">
-                    <div class="spacer" style="line-height:70px; height:70px;background-color: #f2f2f2;mso-line-height-rule:exactly;">&#8202;</div>
+                    <div class="spacer none" style="line-height:70px; height:70px;background-color: #f2f2f2;mso-line-height-rule:exactly;">&#8202;</div>
                 </td>
             </tr>
             <!-- Section padding end -->
@@ -517,7 +569,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 20px 0px 40px 0;">
+                                        <td class="social-pad" style="padding: 20px 0px 40px 0;">
                                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                                 <tr>
                                                     <td style="text-align:center;background-color: #f2f2f2;">
@@ -577,13 +629,13 @@
                                     <tr>
                                         <td style="text-align:center;">
                                             <a href="https://example.com" target="_blank" style="text-decoration: none;">
-                                                <span style="Margin: 0;color: #6A3460;font-size: 14px;line-height: 20px;font-weight: 700;font-family: 'Open Sans', sans-serif;">
+                                                <span class="footer-text" style="Margin: 0;color: #6A3460;font-size: 14px;line-height: 20px;font-weight: 700;font-family: 'Open Sans', sans-serif;">
                                                     Change your email preferences
                                                 </span>
                                             </a>
-                                            <span class="mobile-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                            <span class="bar">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                             <a href="https://example.com" target="_blank" style="text-decoration: none;">
-                                                <span style="Margin: 0;color: #6A3460;font-size: 14px;line-height: 20px;font-weight: 700;font-family: 'Open Sans', sans-serif;">
+                                                <span class="footer-text" style="Margin: 0;color: #6A3460;font-size: 14px;line-height: 20px;font-weight: 700;font-family: 'Open Sans', sans-serif;">
                                                     Forward to a friend
                                                 </span>
                                             </a>
