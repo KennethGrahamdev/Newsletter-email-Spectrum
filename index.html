@@ -148,30 +148,63 @@
             color-scheme: light dark;
             supported-color-schemes: light dark;
         }
-
         @media (prefers-color-scheme: dark) {
-
             .body,
-            .email-bg {
-                background: #212425 !important;
+            .email-bg,
+            .spacer,
+            .social,
+            .footer,
+            .browser,
+            .dark-bg {
+                background: #1f2223 !important;
             }
-
-            .body-bg {
-                background: #181a1b !important;
+            .dark {
+                background: #181a1b!important;
+            }
+             h2, span {
+                color: #ca93c0!important;
+            }
+             p, em {
+                color: #f0f0f0!important;
+            }
+            .browser {
+                color: #E35205!important;
             }
         }
+        /* For Android Outlook */
+            [data-ogsc].body,
+            [data-ogsc].email-bg,
+            [data-ogsc].spacer,
+            [data-ogsc].social,
+            [data-ogsc].footer,
+            [data-ogsc].browser,
+            [data-ogsc].dark-bg {
+                background: #1f2223 !important;
+            }
+            [data-ogsc].dark {
+                background: #181a1b!important;
+            }
+             [data-ogsc] h2, [data-ogsc] span {
+                color: #ca93c0!important;
+            }
+             [data-ogsc] p, [data-ogsc] em {
+                color: #f0f0f0!important;
+            }
+            [data-ogsc] .browser {
+                color: #E35205!important;
+            }
     </style>
 </head>
 
-<body class="body" xml:lang="en" style="background-color: #F2F2F2;">
+<body class="body" xml:lang="en" style="background-color: #f2f2f2;">
     <!-- Wrapper table so background of entire viewport will render in Windows mail 10 and 11 -->
     <!--[if mso]>
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
         <tr>
-        <td style="background-color: #F2F2F2;" >
+        <td style="background-color: #f2f2f2;" >
     <![endif]-->
     <div class="email-bg" role="article" aria-roledescription="email" aria-label="email name" lang="en" dir="ltr"
-        style="font-size:medium; font-size:max(16px, 1rem);background-color: #F2F2F2;">
+        style="font-size:medium; font-size:max(16px, 1rem);background-color: #f2f2f2;">
         <div style="display: none; max-height: 0px; overflow: hidden;">
             Welcome to the first edition of 'The Buzz'
             &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847;&#847;&#847;&#847;&#847;
@@ -187,20 +220,20 @@
         <!--[if mso]> 
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="width:640px;"> 
             <tr> 
-            <td style="padding:0;background-color: #FFFFFF;"> 
+            <td style="padding:0;background-color: #ffffff;"> 
         <![endif]-->
-        <div class="body-bg" style="width: 100%;max-width:640px;margin:0 auto;background-color: #FFFFFF;">
+        <div class="body-bg" style="width: 100%;max-width:640px;margin:0 auto;background-color: #f2f2f2;">
             <!-- Browser View start -->
             <tr>
                 <td>
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                         <tr>
-                            <td style="text-align:center;padding: 15px 0;background-color: #F2F2F2;">
+                            <td class="browser" style="text-align:center;padding: 15px 0;background-color: #f2f2f2;">
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
                                         <td style="text-align:center;">
                                             <a href="https://example.com" target="_blank" style="text-decoration: none;">
-                                                <p style="Margin: 0;font-size: 16px;line-height: 24px;color: #E35205;font-weight: 400;font-family: 'Open Sans', sans-serif;">View this email in a browser</p>
+                                                <p class="browser" style="Margin: 0;font-size: 16px;line-height: 24px;color: #E35205;font-weight: 400;font-family: 'Open Sans', sans-serif;">View this email in a browser</p>
                                             </a>  
                                         </td>
                                     </tr>
@@ -238,10 +271,10 @@
                                         </tr>
                                         <tr>
                                             <td class="hero-pad" style="text-align:center;padding: 10px 40px;display: inline-block;max-width: 640px;">
-                                                <h1 class="hero-head" style="Margin: 26px 0;font-size: 40px;line-height: 50px;color: #FFFFFF;font-weight: 700;font-family: 'Arimo', sans-serif;">
+                                                <h1 class="hero-head" style="Margin: 26px 0;font-size: 40px;line-height: 50px;color: #ffffff;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                     The Buzz
                                                 </h1>
-                                                <p style="Margin: 20px 0;font-size: 20px;line-height: 30px;color: #FFFFFF;font-weight: 400;font-family: 'Open Sans', sans-serif;">
+                                                <p style="Margin: 20px 0;font-size: 20px;line-height: 30px;color: #ffffff;font-weight: 400;font-family: 'Open Sans', sans-serif;">
                                                     Welcome to the first edition of 'The Buzz' – our brand new e-newsletter! Every month we'll be delivering the latest MS news and stories direct to your inbox. We can't wait to share them with you.
                                                 </p>
                                             </td>
@@ -270,7 +303,7 @@
                 <td>
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                         <tr>
-                            <td style="text-align:center;background-color: #f2f2f2;">
+                            <td class="dark-bg" style="text-align:center;background-color: #f2f2f2;">
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
                                         <td style="border-radius: 5px 5px 0 0;">
@@ -278,7 +311,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="text-pad" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
+                                        <td class="text-pad dark" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
                                             <h2 style="Margin: 0 0 10px 0;font-size: 24px;line-height: 30px;color: #6A3460;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                 Want to get active in 2017?
                                             </h2>
@@ -317,7 +350,7 @@
                 <td>
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                         <tr>
-                            <td style="text-align:center;background-color: #f2f2f2;">
+                            <td class="dark-bg" style="text-align:center;background-color: #f2f2f2;">
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
                                         <td style="border-radius: 5px 5px 0 0;">
@@ -325,7 +358,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="text-pad" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
+                                        <td class="text-pad dark" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
                                             <h2 style="Margin: 0 0 10px 0;font-size: 24px;line-height: 30px;color: #6A3460;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                 Nominate your MS hero today
                                             </h2>
@@ -364,7 +397,7 @@
                 <td>
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                         <tr>
-                            <td style="text-align:center;background-color: #f2f2f2;">
+                            <td class="dark-bg" style="text-align:center;background-color: #f2f2f2;">
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
                                         <td style="border-radius: 5px 5px 0 0;">
@@ -372,7 +405,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="text-pad" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
+                                        <td class="text-pad dark" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
                                             <h2 style="Margin: 0 0 10px 0;font-size: 24px;line-height: 30px;color: #6A3460;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                 A research round-up of 2022
                                             </h2>
@@ -411,7 +444,7 @@
                 <td>
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                         <tr>
-                            <td style="text-align:center;background-color: #f2f2f2;">
+                            <td class="dark-bg" style="text-align:center;background-color: #f2f2f2;">
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
                                         <td style="border-radius: 5px 5px 0 0;">
@@ -419,7 +452,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="text-pad" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
+                                        <td class="text-pad dark" style="padding: 20px;text-align: center;background-color: #ffffff;border-radius: 0 0 5px 5px;">
                                             <h2 style="Margin: 0 0 10px 0;font-size: 24px;line-height: 30px;color: #6A3460;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                 Watch an animated history of MS
                                             </h2>
@@ -461,7 +494,7 @@
                             <td>
                                 <table class="columns-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
-                                        <td style="background-color: #f2f2f2;text-align: center;">
+                                        <td class="dark-bg" style="background-color: #f2f2f2;text-align: center;">
                                             <!-- Column-1 start -->
                                             <table class="col" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" style="width: 48%;">
                                                 <tr>
@@ -471,7 +504,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-text" style="text-align: left;padding: 20px 20px 0 20px;background-color: #ffffff;vertical-align: top;border-radius: 0 0 5px 5px;">
+                                                    <td class="col-text dark" style="text-align: left;padding: 20px 20px 0 20px;background-color: #ffffff;vertical-align: top;border-radius: 0 0 5px 5px;">
                                                             <!--[if mso 16]>
                                                               <h2 style="Margin: 0 40px 10px 0;">
                                                             <![endif]-->
@@ -500,7 +533,7 @@
                                                                 <![endif]-->
                                                         </a>
                                                         <!-- This type of padding was used to eliminate a line in MSO 2021 (200DPI) -->
-                                                        <div class="column-padding" style="line-height:20px; height:20px;background-color: #ffffff;mso-line-height-rule:exactly;">&#8202;</div>
+                                                        <div class="column-padding dark" style="line-height:20px; height:20px;background-color: #ffffff;mso-line-height-rule:exactly;">&#8202;</div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -514,7 +547,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-text" style="text-align: left;padding: 20px 20px 0 20px;background-color: #ffffff;vertical-align: top;border-radius: 0 0 5px 5px;">
+                                                    <td class="col-text dark" style="text-align: left;padding: 20px 20px 0 20px;background-color: #ffffff;vertical-align: top;border-radius: 0 0 5px 5px;">
                                                         <h2 style="Margin: 0 0 10px 0;font-size: 24px;line-height: 30px;color: #6A3460;font-weight: 700;font-family: 'Arimo', sans-serif;">
                                                             Your support
                                                           </h2>
@@ -532,8 +565,8 @@
                                                                   <i style="mso-font-width:200%;" hidden>&#8195;&#8203;</i>
                                                                   <![endif]-->
                                                           </a>
-                                                          <!-- This type of padding was used to eliminate a line in MSO 2021 (200DPI) -->
-                                                          <div class="column-padding" style="line-height:20px; height:20px;background-color: #ffffff;mso-line-height-rule:exactly;">&#8202;</div>
+                                                          <!-- This type of padding was used to eliminate a line in MSO 2021 (200DPI). Also, theres a different line-height/height from the first column in order to make the columns the same height.  -->
+                                                          <div class="column-padding dark" style="line-height:24px; height:24px;background-color: #ffffff;mso-line-height-rule:exactly;">&#8202;</div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -559,7 +592,7 @@
                 <td>
                     <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                         <tr>
-                            <td style="text-align:center;background-color: #f2f2f2;">
+                            <td class="social" style="text-align:center;background-color: #f2f2f2;">
                                 <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
                                         <td style="text-align:center;">
@@ -572,7 +605,7 @@
                                         <td class="social-pad" style="padding: 20px 0px 40px 0;">
                                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                                 <tr>
-                                                    <td style="text-align:center;background-color: #f2f2f2;">
+                                                    <td class="social" style="text-align:center;background-color: #f2f2f2;">
                                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 270px;">
                                                             <tr>
                                                                 <td style="text-align: center;display: inline-block;">
@@ -624,7 +657,7 @@
                 <td>
                     <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                         <tr>
-                            <td style="text-align:center;background-color: #f2f2f2;padding: 20px;">
+                            <td class="footer" style="text-align:center;background-color: #f2f2f2;padding: 20px;">
                                 <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                     <tr>
                                         <td style="text-align:center;">
