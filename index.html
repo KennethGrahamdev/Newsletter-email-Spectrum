@@ -63,6 +63,12 @@
             line-height: inherit !important;
         }
 
+        [x-apple-data-detectors-type="calendar-event"] {
+            color: inherit !important;
+            -webkit-text-decoration-color: inherit !important;
+            text-decoration: none !important;
+        }
+
         /* Removes Samsung blue links */
         #MessageViewBody a {
             color: inherit;
@@ -80,6 +86,15 @@
             font-size: inherit;
             font-weight: inherit;
             line-height: inherit;
+        }
+        /* Fix for Outlook links and visited links color */
+        span.MsoHyperlink {
+            color: inherit !important;
+            mso-style-priority: 99 !important;
+        }
+        span.MsoHyperlinkFollowed {
+            color: inherit !important;
+            mso-style-priority: 99 !important;
         }
     </style>
     <style>
@@ -164,7 +179,7 @@
              h2, span {
                 color: #ca93c0!important;
             }
-             p, em {
+             p, em, .subscribe {
                 color: #f0f0f0!important;
             }
             .browser {
@@ -187,7 +202,8 @@
              [data-ogsc] h2, [data-ogsc] span {
                 color: #ca93c0!important;
             }
-             [data-ogsc] p, [data-ogsc] em {
+             [data-ogsc] p, [data-ogsc] em, 
+             [data-ogsc].subscribe {
                 color: #f0f0f0!important;
             }
             [data-ogsc] .browser {
@@ -685,7 +701,7 @@
                                             <span style="Margin: 0;color: #6A3460;font-size: 14px;line-height: 20px;font-weight: 700;font-family: 'Open Sans', sans-serif;">
                                                 You are subscribed as
                                             </span><br>
-                                            <span style="font-size: 14px;line-height: 20px;color: #666666;font-weight: 400;font-family: 'Open Sans', sans-serif;text-decoration: none;">
+                                            <span class="subscribe" style="font-size: 14px;line-height: 20px;color: #666666;font-weight: 400;font-family: 'Open Sans', sans-serif;text-decoration: none;">
                                                 xxxxxx@xxxxxxx.xxx
                                             </span>
                                         </td>
